@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/reset.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/header.css" />
-    <link rel="icon" type="image/png" href="img/tietgenLogo.png" />
+    <link rel="icon" type="image/png" href="img/browserLogo.png" />
   </head>
   <body>
     <!-- Header Start -->
@@ -21,7 +21,7 @@
       <div class="site-header__top">
         <div class="wrapper site-header__wrapper">
           <a href="index.php" class="logopic">
-              <img src="img/torbensbilerLogo.png" alt="logo" style="width: 80px; height: 30px;">
+              <img src="img/logo.png" alt="logo" style="width: 110px; height: 31px;">
           </a>
           <div class="site-header__start">
             <ul class="">
@@ -45,7 +45,7 @@
             else {
 
             echo '<a href="signup.php">Signup</a>';
-            echo '<a class="button" href="login.php">Login</a>';
+            echo '<a class="button" href="login.php" style="color:#2d3d54;">Login</a>';
             }
              ?>
 
