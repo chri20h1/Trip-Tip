@@ -1,0 +1,55 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  grid-gap: 25px;
+}
+
+.grid div:nth-child(even) {
+  background-color: white;
+}
+
+.grid div:nth-child(odd) {
+  background-color: white;
+}
+
+.bil p {
+  display: inline-block;
+  text-align: right;
+}
+.bil h1 {
+  display: inline-block;
+  text-align: right;
+  background-color: #7899DF;
+  color: white;
+}
+
+.bil {
+  outline-style: groove;
+  outline-color: #C7f2ff;
+}
+
+@media screen and (max-width: 1040px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 258px 258px 258px;
+    grid-template-rows: 200px 200px;
+
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 709px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 258px 258px;
+    grid-template-rows: 200px 200px;
+  }
+
+  @media screen and (max-width: 475px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 258px;
+      grid-template-rows: 200px 200px;
+    }
+}
