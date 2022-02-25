@@ -3,6 +3,8 @@
   font-weight: bold;
   font-size: 27px; }
 
+
+
 .site-header__top {
   background-color: #DCD5DC; }
   .site-header__top ul {
@@ -14,7 +16,8 @@
 
 .site-header__bottom {
   position: relative;
-  background-color: #E8AA9B; }
+  background-color: #E8AA9B;
+  box-shadow: 0 0px 2px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); }
   @media (max-width: 939px) {
     .site-header__bottom .site-header__end {
       order: -1;
@@ -87,6 +90,7 @@
   @media (max-width: 939px) {
     .nav__item a {
       padding: 1rem; } }
+}
 .nav__item svg {
   display: inline-block;
   vertical-align: middle;
@@ -107,7 +111,7 @@
      -moz-appearance: none;
           appearance: none;
   color: #fff;
-  background-color: #2fa0f6;
+  background-color: #E8AA9B;
   min-width: 80px;
   padding: 0.2rem 1rem;
   border-radius: 7px;

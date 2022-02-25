@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/reset.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/header.css" />
-    <link rel="icon" type="image/png" href="img/browserLogo.png" />
+    <link rel="icon" type="image/png" href="img/browserlogo.png" />
   </head>
   <body>
     <!-- Header Start -->
@@ -30,7 +30,7 @@
             </ul>
           </div>
           <div class="site-header__middle">
-            <a href="index.php" class="brand">Trip Tip</a>
+            <a href="index.php" class="brand" >Trip Tip</a>
           </div>
 
 
@@ -56,14 +56,12 @@
         <div class="wrapper site-header__wrapper">
           <div class="site-header__start">
             <nav class="nav">
-              <button class="nav__toggle" aria-expanded="false" type="button">
-                menu
-              </button>
+              <button class="nav__toggle" aria-expanded="false" type="button" style="color:#2d3d54;">Menu</button>
               <ul class="nav__wrapper">
-                <li class="nav__item"><a href="index.php">Hjem</a></li>
-                <li class="nav__item"><a href="inventar.php">Biler</a></li>
-                <li class="nav__item"><a href="udlejninger.php">Mine Udlejninger</a></li>
-                <li class="nav__item"><a href="demo.php">Demo site</a></li>
+                <li class="nav__item"><a href="index.php">Temp</a></li>
+                <li class="nav__item"><a href="inventar.php">Temp</a></li>
+                <li class="nav__item"><a href="udlejninger.php">Temp</a></li>
+                <li class="nav__item"><a href="demo.php">Temp</a></li>
               </ul>
             </nav>
           </div>
