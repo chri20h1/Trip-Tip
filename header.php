@@ -7,7 +7,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Torbens Biler</title>
+    <title>Trip Tip</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/reset.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
@@ -30,7 +30,7 @@
             </ul>
           </div>
           <div class="site-header__middle">
-            <a href="index.php" class="brand">Torbens Biler</a>
+            <a href="index.php" class="brand">Trip Tip</a>
           </div>
 
 
