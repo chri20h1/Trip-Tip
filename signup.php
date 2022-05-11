@@ -4,14 +4,17 @@
   <div class="loginBoks">
       <h1>Opret dig her</h1>
       <form action="includes/signup.inc.php" method="post">
-        <input type="text" class="input-box" name="social" placeholder="Dit CPR nummer">
         <input type="text" class="input-box" name="name" placeholder="Dit fulde navn">
         <input type="email" class="input-box" name="email" placeholder="Din email">
         <input type="text" class="input-box" name="uid" placeholder="Dit username">
         <input type="password" class="input-box" name="pwd" placeholder="Dit password">
         <input type="password" class="input-box" name="pwdrepeat" placeholder="Gentag password">
         <input type="date" class="input-box" name="birthday" placeholder="Din fødselsdag">
-        <input type="text" class="input-box" name="sex" placeholder="Dit køn">
+         <select name="sex" class="input-box" placeholder="">
+          <option value="null">Køn</option>
+          <option value="male">Mand</option>
+          <option value="female">Kvinde</option>
+          <option value="other">Andet</option>
         <input type="text" class="input-box" name="address" placeholder="Din adresse">
         <input type="text" class="input-box" name="postal" placeholder="Postnummer">
         <input type="text" class="input-box" name="city" placeholder="By">
