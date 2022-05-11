@@ -1,9 +1,9 @@
 <?php
 
 // Tomme input?
-function emptyInputSignup($social, $name, $email, $username, $pwd, $pwdRepeat, $birthday, $sex, $address, $postal, $city) {
+function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat, $birthday, $sex, $address, $postal, $city) {
 	$result;
-	if (empty($social) || empty($name) || empty($email) || empty($username) || empty($pwd) || empty($pwdRepeat) || empty($birthday) || empty($sex) || empty($address) || empty($postal) || empty($city)) {
+	if (empty($name) || empty($email) || empty($username) || empty($pwd) || empty($pwdRepeat) || empty($birthday) || empty($sex) || empty($address) || empty($postal) || empty($city)) {
 		$result = true;
 	}
 	else {
@@ -75,8 +75,8 @@ function uidExists($conn, $username) {
 }
 
 // Indsæt ny user i databasen
-function createUser($conn, $social, $name, $email, $username, $pwd, $birthday, $sex, $address, $postal, $city) {
-  $sql = "INSERT INTO users (usersCpr, usersName, usersEmail, usersUid, usersPwd, usersBirthday, usersSex, usersAddress, usersPostal, usersCity) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+function createUser($conn, $name, $email, $username, $pwd, $birthday, $sex, $address, $postal, $city) {
+  $sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd, usersBirthday, usersSex, usersAddress, usersPostal, usersCity) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
 
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -86,7 +86,7 @@ function createUser($conn, $social, $name, $email, $username, $pwd, $birthday, $
 
 	$hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-	mysqli_stmt_bind_param($stmt, "ssssssssss", $social, $name, $email, $username, $hashedPwd, $birthday, $sex, $address, $postal, $city);
+	mysqli_stmt_bind_param($stmt, "sssssssss", $name, $email, $username, $hashedPwd, $birthday, $sex, $address, $postal, $city);
 	mysqli_stmt_execute($stmt);
 	mysqli_stmt_close($stmt);
 	mysqli_close($conn);
